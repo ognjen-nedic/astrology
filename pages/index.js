@@ -100,6 +100,7 @@ export default function Home() {
             <div className="right-side__top">
               <h2>{sign}</h2>
               <p>{data.date_range}</p>
+              <p className="small-device-description">{data.description}</p>
             </div>
             <Picker signArray={signArray} planet={planet} sign={sign} setSign={setSign}/>
           </div>
