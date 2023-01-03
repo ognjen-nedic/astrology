@@ -81,12 +81,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="backgroundParallax">
-          <div id='stars1'></div>
-          <div id='stars2'></div>
-          <div id='stars3'></div>
-        </div>          
+                 
         <div className="content wrapper" >
+          <div className="backgroundParallax">
+            <div id='stars1'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
+          </div> 
           <div className="title">
             <h1>HOROSCOPE</h1>
           </div>

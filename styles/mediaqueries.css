@@ -6,8 +6,9 @@
 
     .content 
     {
-        grid-template-columns: 1fr;
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .small-device-description 
@@ -18,7 +19,9 @@
     .title 
     {
         position: initial;
+        margin: unset;
         margin-top: 20px;
+
     }
 
     .sign-pick 
@@ -26,8 +29,15 @@
         top: 0;
     }
 
+    .right-side 
+    {
+        width: 90%;
+    }
+
     .right-side__top 
     {
         justify-content: space-around;
+        padding: 10px;
+        flex: 1;
     }
 }

@@ -173,11 +173,13 @@ cursor: pointer;
   
 .sign-pick {
 display: flex;
+justify-content: center;
+align-items: center;
 border-radius: 50%;
 position: relative;
 top: -100px;
-width: 500px;
-height: 500px;
+width: 100%;
+aspect-ratio: 1 / 1;
 margin: auto;
 background-position: center;
 background-size: cover;
@@ -186,14 +188,11 @@ transition: background-image ease-in-out 2s;
 }
   
 .sign-blur-effect {
-position: absolute;
-width: 250px;
-height: 250px;
+width: 50%;
+aspect-ratio: 1 / 1;
 border-radius: 50%;
 backdrop-filter: blur(10px);
 background-color: rgba(255, 255, 255, 0.05);   
-left: calc(50% - 125px);
-top: calc(50% - 125px);
 display: flex;
 justify-content: center;
 align-items: center;
@@ -203,136 +202,114 @@ border: solid white 2px;
 .sign-blur-effect > img {
 position: absolute;
 margin: auto; 
-width: 100px;
-height: 100px;
+width: 50%;
+aspect-ratio: 1 / 1;
 }
   
 .sign-element {
+width: 10%;
+height: 10%;
 position: absolute;
-left: calc(50% - 25px);
-top: calc(50% - 25px);
-height: 50px;
-width: 50px;
 }
   
 .sign-element:nth-child(2) {
-transform: translateX(210px);
-}
-  
-.sign-element:nth-child(2) > .sign-box > img {
-transform: rotate(90deg);
-width: 40px;
-height: 40px;
+  top: 3%;
 }
   
 .sign-element:nth-child(3) {
-transform: rotate(30deg) translateX(210px);
+  top: 8.67%;
+  right: 25.34%;
 }
-  
+
 .sign-element:nth-child(3) > .sign-box > img {
-transform: rotate(90deg);
-width: 40px;
-height: 40px;
+  transform: rotate(30deg)
 }
 
 .sign-element:nth-child(4) {
-transform: rotate(60deg) translateX(210px);
+  top: 25.67%;
+  right: 8.34%;
 }
 
 .sign-element:nth-child(4) > .sign-box > img {
-transform: rotate(90deg);
-width: 40px;
-height: 40px;
+  transform: rotate(60deg)
 }
 
 .sign-element:nth-child(5) {
-transform: rotate(90deg) translateX(210px);
+  right: 3%;
 }
 
 .sign-element:nth-child(5) > .sign-box > img {
-transform: rotate(90deg);
-width: 40px;
-height: 40px;
+  transform: rotate(90deg)
 }
 
 .sign-element:nth-child(6) {
-transform: rotate(120deg) translateX(210px);
+  bottom: 25.67%;
+  right: 8.34%;
 }
 
 .sign-element:nth-child(6) > .sign-box > img {
-transform: rotate(90deg);
-width: 40px;
-height: 40px;
+  transform: rotate(120deg)
 }
 
 .sign-element:nth-child(7) {
-transform: rotate(150deg) translateX(210px);
+  bottom: 8.67%;
+  right: 25.34%;
 }
 
 .sign-element:nth-child(7) > .sign-box > img {
-transform: rotate(90deg);
-width: 40px;
-height: 40px;
+  transform: rotate(150deg)
 }
 
 .sign-element:nth-child(8) {
-transform: rotate(180deg) translateX(210px);
+  bottom: 3%;
 }
 
 .sign-element:nth-child(8) > .sign-box > img {
-transform: rotate(90deg);
-width: 40px;
-height: 40px;
+  transform: rotate(180deg)
 }
 
 .sign-element:nth-child(9) {
-transform: rotate(210deg) translateX(210px);
+  bottom: 8.67%;
+  left: 25.34%;
 }
 
 .sign-element:nth-child(9) > .sign-box > img {
-transform: rotate(90deg);
-width: 40px;
-height: 40px;
+  transform: rotate(210deg)
 }
 
 .sign-element:nth-child(10) {
-transform: rotate(240deg) translateX(210px);
+  bottom: 25.67%;
+  left: 8.34%;
 }
 
 .sign-element:nth-child(10) > .sign-box > img {
-transform: rotate(90deg);
-width: 40px;
-height: 40px;
+  transform: rotate(240deg)
 }
 
 .sign-element:nth-child(11) {
-transform: rotate(270deg) translateX(210px);
+  left: 3%;
 }
 
 .sign-element:nth-child(11) > .sign-box > img {
-transform: rotate(90deg);
-width: 40px;
-height: 40px;
+  transform: rotate(270deg)
 }
 
 .sign-element:nth-child(12) {
-transform: rotate(300deg) translateX(210px);
+  top: 25.67%;
+  left: 8.34%;
 }
 
 .sign-element:nth-child(12) > .sign-box > img {
-transform: rotate(90deg);
-width: 40px;
-height: 40px;
+  transform: rotate(300deg)
 }
 
 .sign-element:nth-child(13) {
-transform: rotate(330deg) translateX(210px);
+  top: 8.67%;
+  left: 25.34%;
 }
 
 .sign-element:nth-child(13) > .sign-box > img {
-transform: rotate(90deg);
-width: 40px;
-height: 40px;
+  transform: rotate(330deg)
 }
 
 .small-device-description 
