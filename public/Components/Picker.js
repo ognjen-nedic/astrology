@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Picker = (props) => {
   return (
-    <div loading="lazy" className="sign-pick" style={{backgroundImage: [`url(/astrology/files/images/${props.planet}.jpg)`,`url(/astrology/files/images/nightsky.jpg)`]}}>
+    <div className="sign-pick" style={{backgroundImage: [`url(/astrology/files/images/${props.planet}.jpg)`,`url(/astrology/files/images/nightsky.jpg)`]}}>
         <div className="sign-blur-effect"><img src={`/astrology/files/images/${props.sign}.svg`} alt={`${props.sign} sign icon`}/></div>
         {props.signArray.map((element,index) => {
           return (

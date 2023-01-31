@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import { useState, useEffect } from 'react'
 import Picker from '../public/Components/Picker'
+import PreloadedImage from '../public/Components/PreloadedImage'
 
 
 export default function Home() {
@@ -12,7 +13,31 @@ export default function Home() {
   const [planet, setPlanet] = useState('mars');
   const [day, setDay] = useState('today');
 
-  const signArray = ["aries", "taurus", "gemini", "cancer", "leo", "virgo", "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"];
+  const signArray 
+    = ["aries"
+      , "taurus"
+      , "gemini"
+      , "cancer"
+      , "leo"
+      , "virgo"
+      , "libra"
+      , "scorpio"
+      , "sagittarius"
+      , "capricorn"
+      , "aquarius"
+      , "pisces"];
+  // For image preloading -- should find better solution.
+      const images
+     = ["/astrology/files/images/sun.jpg"
+     , "/astrology/files/images/mercury.jpg"
+     , "/astrology/files/images/venus.jpg"
+     , "/astrology/files/images/moon.jpg"
+     , "/astrology/files/images/mars.jpg"
+     , "/astrology/files/images/jupiter.jpg"
+     , "/astrology/files/images/saturn.jpg"
+     , "/astrology/files/images/uranus.jpg"
+     , "/astrology/files/images/neptune.jpg"
+     , "/astrology/files/images/pluto.jpg" ]
 
   console.log(data);
 
@@ -83,6 +108,9 @@ export default function Home() {
             <div id='stars2'></div>
             <div id='stars3'></div>
       </div>
+      <div className="title">
+        <h1>HOROSCOPE</h1>
+      </div>
     </div>)
   }
 
@@ -104,7 +132,10 @@ export default function Home() {
             <div id='stars1'></div>
             <div id='stars2'></div>
             <div id='stars3'></div>
-          </div> 
+          </div>
+          {images.map((image, index) => (
+            <PreloadedImage key={index} src={image} />
+          ))}
           <div className="title">
             <h1>HOROSCOPE</h1>
           </div>
