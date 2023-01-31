@@ -7,6 +7,7 @@ import Picker from '../public/Components/Picker'
 
 export default function Home() {
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true)
   const [sign, setSign] = useState('aries');
   const [planet, setPlanet] = useState('mars');
   const [day, setDay] = useState('today');
@@ -32,6 +33,7 @@ export default function Home() {
       })
       .then((data) => {
         setData(data);
+        setLoading(false);
       })
       .catch((error) => {
         console.log(error);
@@ -71,6 +73,18 @@ export default function Home() {
     }
 
   },[sign])
+
+  if(loading) 
+  {
+    return (
+    <div className="content wrapper" >
+      <div className="backgroundParallax">
+            <div id='stars1'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
+      </div>
+    </div>)
+  }
 
   return (
     <>
