@@ -123,7 +123,7 @@ export default function Home() {
         <meta property="og:description" content="Screensaver for lobby with astrology theme" />
         <meta property="og:image" content="/astrology/files/images/og-background.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" type="image/x-icon" href="/astrology/favicon.ico" />
       </Head>
       <main>
                  
