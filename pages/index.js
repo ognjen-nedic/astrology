@@ -48,7 +48,7 @@ export default function Home() {
   };
 
   useEffect(() => {
-    fetch(`https://aztro.sameerkumar.website/?sign=${sign}&day=${day}`, requestOptions)
+    fetch(`https://ognjen-nedic.github.io/astrology/api/data`, requestOptions)
       .then((response) => {
         if (!response.ok) {
           throw Error("Something went wrong!");
@@ -142,14 +142,14 @@ export default function Home() {
           <div className="left-side">
             <div className="left-side__illustration"></div>
             <div className="left-side__description">
-              <p>{data.description}</p>        
+              <p>{data[sign].description}</p>        
             </div>
           </div>
           <div className="right-side">
             <div className="right-side__top">
               <h2>{sign}</h2>
-              <div className="right-side__top__date-range"><p>{data.date_range}</p></div>
-              <p className="small-device-description">{data.description}</p>
+              <div className="right-side__top__date-range"><p>{data[sign].date_range}</p></div>
+              <p className="small-device-description">{data[sign].description}</p>
             </div>
             <Picker signArray={signArray} planet={planet} sign={sign} setSign={setSign}/>
           </div>
